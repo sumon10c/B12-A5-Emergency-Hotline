@@ -14,17 +14,24 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <body>
     <!-- Header section -->
-     <section id="header" class="border-2 border-red-5oo flex justify-between  h-[70px]">
-<div class="border-2 border-green-500 flex items-center gap-[10px]">
-    <img src="./assets/logo.png" class="h-[70px]" alt="">
-    <p>Emergency <br> Service</p>
+     <section id="header" class=" flex justify-between flex-col md:flex-row   p-2 mt-[10px]">
+<div class="flex items-center gap-[10px]">
+    <img src="./assets/logo.png" class="h-[64px]" alt="">
+    <p class="text-[#006747] font-bold text-[20px]">Emergency <br> Service</p>
     
 </div>
 <div class="flex items-center gap-[20px]">
-    <div class="flex">0 <img src="./assets/heart.png" class="h-[25px]" alt=""></div>
-    <div class="flex">100 <img src="./assets/coin.png" class="h-[25px]"  alt=""></div>
-    <div class="flex">2 <span>copy</span></div>
+    <div class="flex bg-[#41ff6b1a] p-4 rounded-[50px]">0 <img src="./assets/heart.png" class="h-[25px] ml-[10px]" alt=""></div>
+    <div class="flex bg-[#41ff6b1a] p-4 rounded-[50px]">100 <img src="./assets/coin.png" class="h-[25px] ml-[10px]"  alt=""></div>
+    <div class="flex p-4 rounded-[50px] bg-[#00A63E] text-white font-[500]"><span class="mr-[10px]">2</span>copy</div> 
 </div>
      </section>
+
+     <!-- Banner section -->
+      <section id="Banner" class=" p-[20px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] ">
+         <img src="./assets/logo-dark.png" class="h-[90px] mx-auto " alt="">
+         <h1 class="text-center text-white font-[700] text-[40px]">Emergency Service Directory</h1>
+         <p class="text-center text-white text-[20px] font-[600] mt-[10px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+      </section>
 </body>
 </html>
