@@ -1,0 +1,44 @@
+Question-1 : getElementById : Can select elements only by ID.
+             getElementById : Returns a single element (or null).
+             getElementsByClassName : Can select elements only by class.
+             getElementsByClassName : Returns an HTMLCollection (looks like an array, but isn’t, and it’s live).
+             querySelector / querySelectorAll : Can select elements using any CSS selector (id, class, tag, etc.).
+             querySelectorAll : Returns a NodeList (looks like an array).
+
+
+Question-2 : Create a new element → using document.createElement().
+             Add content → using textContent / innerHTML.
+             Find the parent element → using getElementById, querySelector, etc., 
+             Insert into the DOM → using appendChild() or append().
+
+
+Question-3 : Event Bubbling :
+             Event Bubbling is an event mechanism in JavaScript.
+             When an event happens on a child element
+             The event is triggered on that element first.
+             Then it propagates step by step to its parent  grandparent  up to the entire document.
+             This process of moving upward from child to parent is called Event Bubbling.
+
+
+              How to work :
+              When you click on the child button:
+              First, the event on the child element will run.
+              Then, the event on its parent will run.
+              Finally, the event on its parent will run.
+
+Question-4 :Event Delegation is a technique in JavaScript where instead of adding event listeners to multiple child elements, you add a single event listener to a parent element.
+            Then, inside that listener, you determine which child triggered the event using
+
+            Why is it useful?
+             You don’t need separate listeners for every child element.
+             If new child elements are added later dynamically, they are automatically handled.
+             No need to attach a new listener to each new element.
+             One listener on the parent instead of many listeners on children.
+
+Question-5 :preventDefault()
+            Stops the default action of an element from happening.
+            Does NOT stop event bubbling.
+
+           stopPropagation()
+           Stops the event from bubbling up to parent elements.
+           Does NOT prevent the default action of the element.

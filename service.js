@@ -253,27 +253,66 @@ clearBtn.addEventListener("click",function(){
 })
 
 
+// Copy button and count section
+
+let copy = 0
+const copyCount = document.getElementById("copy-count")
+
+const copyBtn1 = document.getElementById("copy-btn1")
+const copyBtn2 = document.getElementById("copy-btn2")
+const copyBtn3 = document.getElementById("copy-btn3")
+const copyBtn4 = document.getElementById("copy-btn4")
+const copyBtn5 = document.getElementById("copy-btn5")
+const copyBtn6 = document.getElementById("copy-btn6")
+
+const serviceNumber_1 = document.getElementById("service-num-1").textContent;
+const serviceNumber_2 = document.getElementById("service-num-2").textContent;
+const serviceNumber_3 = document.getElementById("service-num-3").textContent;
+const serviceNumber_4 = document.getElementById("service-num-4").textContent;
+const serviceNumber_5 = document.getElementById("service-num-5").textContent;
+const serviceNumber_6 = document.getElementById("service-num-6").textContent;
 
 
+copyBtn1.addEventListener("click",function(){
+    copy++
+    copyCount.textContent = copy
+    navigator.clipboard.writeText(serviceNumber_1) 
+    alert(serviceNumber_1 + ".\nThe number has been copied")
+})
+
+copyBtn2.addEventListener("click",function(){
+    copy++
+    copyCount.textContent = copy
+    navigator.clipboard.writeText(serviceNumber_2) 
+    alert(serviceNumber_2 + ".\nThe number has been copied")
+})
+
+copyBtn3.addEventListener("click",function(){
+    copy++
+    copyCount.textContent = copy
+    navigator.clipboard.writeText(serviceNumber_3) 
+    alert(serviceNumber_3 + ".\nThe number has been copied")
+})
+
+copyBtn4.addEventListener("click",function(){
+    copy++
+    copyCount.textContent = copy
+    navigator.clipboard.writeText(serviceNumber_4) 
+    alert(serviceNumber_4 + ".\nThe number has been copied")
+})
 
 
+copyBtn5.addEventListener("click",function(){
+    copy++
+    copyCount.textContent = copy
+    navigator.clipboard.writeText(serviceNumber_5) 
+    alert(serviceNumber_5 + ".\nThe number has been copied")
+})
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+copyBtn6.addEventListener("click",function(){
+    copy++
+    copyCount.textContent = copy
+    navigator.clipboard.writeText(serviceNumber_6) 
+    alert(serviceNumber_6 + ".\nThe number has been copied")
+})
 
